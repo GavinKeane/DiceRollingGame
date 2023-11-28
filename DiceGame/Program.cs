@@ -10,7 +10,7 @@ int biggestStreak = 0;
 bool debug = false;
 
 // Looping games. The upper bound on i indicates how many games will be played in total.
-for (int i = 0; i < 1000000; i++) {
+for (int i = 0; i < 5000000; i++) {
 
     // True = win, False = loss.
     if (playGame(debug)) {
