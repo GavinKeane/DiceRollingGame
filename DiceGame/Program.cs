@@ -10,7 +10,7 @@ int biggestStreak = 0;
 bool debug = false;
 
 // Looping games. The upper bound on i indicates how many games will be played in total.
-for (int i = 0; i < 5000000; i++) {
+for (int i = 0; i < 1000000; i++) {
 
     // True = win, False = loss.
     if (playGame(debug)) {
@@ -74,7 +74,7 @@ bool playGame(bool debug) {
         // These two numbers cannot be the same number.
         // The largest numbers are always prioritzed. (i.e Choosing 12+0 before 11+1 before 10+2, etc).
         for (int i = 0; i < numbers.Count && !found; i++) {
-            for (int j = 0; j < numbers.Count && !found; j++) {
+            for (int j = 6; j < numbers.Count && !found; j++) {
 
                 // Are there two distinct numbers left on the board that add to the sum?
                 if (numbers[i] + numbers[j] == sum && i != j) {
